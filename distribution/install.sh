@@ -4,7 +4,7 @@
 
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 
-GITHUB_USER=$1
+GITHUB_USER=$(echo $1 | tr '[:upper:]' '[:lower:]')"
 ACCESS_TOKEN=$2
 IMAGE=$3
 SERVER_USER=$4
